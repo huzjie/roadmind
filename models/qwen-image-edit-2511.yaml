@@ -1,0 +1,14 @@
+name: Qwen/Qwen-Image-Edit-2511
+family: Qwen
+task: image-edit
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: Apache-2.0
+local: false
+tags:
+  - image-edit
+  - lora
+  - mcp
+extra:
+  slug: qwen-image-edit-2511

@@ -1,0 +1,13 @@
+name: Lightricks/LTX-Video
+family: LTX
+task: video-generation
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: custom
+local: false
+tags:
+  - video
+  - generation
+extra:
+  slug: ltx-video

@@ -1,0 +1,15 @@
+name: XHToken/Spark-X2.5-4B
+family: Spark
+task: edge-llm
+backend: ollama
+parameter_billions: 4.0
+context_length: 1000000
+license: Apache-2.0
+local: true
+tags:
+  - edge
+  - million-context
+  - long-document
+  - code
+extra:
+  slug: spark-x2-5-4b

@@ -1,0 +1,5 @@
+# 通过 Ollama 本地服务推理
+inference:
+  model:
+    name: qwen-drive
+    backend: ollama

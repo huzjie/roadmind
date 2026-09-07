@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadmind"
+version = "1.0.0"
+description = "自动驾驶视觉语言模型推理与规划平台"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "RoadMind Contributors" }]
+keywords = ["autonomous-driving", "vlm", "vision-language-model", "motion-planning", "3d-perception"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+server = ["fastapi>=0.100", "uvicorn>=0.23", "pydantic>=2.0"]
+torch = ["torch>=2.0", "transformers>=4.40", "pillow>=9.0"]
+vllm = ["vllm>=0.4"]
+vision = ["pillow>=9.0", "numpy>=1.24"]
+dev = ["pytest>=7.0", "pytest-cov", "ruff"]
+
+[project.scripts]
+roadmind = "roadmind.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["roadmind*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

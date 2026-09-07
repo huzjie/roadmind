@@ -1,0 +1,15 @@
+name: prithivMLmods/Qwen-Image-Edit-2511-LoRAs-Fast
+family: Qwen
+task: image-edit-lora
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: Apache-2.0
+local: false
+tags:
+  - image-edit
+  - lora
+  - gradio
+  - mcp
+extra:
+  slug: qwen-image-edit-2511-loras-fast

@@ -1,0 +1,15 @@
+name: Qwen/Qwen3.8-27B
+family: Qwen3.8
+task: multimodal-vqa
+backend: vllm
+parameter_billions: 27.0
+context_length: 131072
+license: Apache-2.0
+local: true
+tags:
+  - multimodal
+  - vqa
+  - ocr
+  - document
+extra:
+  slug: qwen3-8-27b

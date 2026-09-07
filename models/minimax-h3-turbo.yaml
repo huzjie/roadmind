@@ -1,0 +1,14 @@
+name: MiniMaxAI/MiniMax-H3-Turbo
+family: MiniMax-H3
+task: llm
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: proprietary
+local: false
+tags:
+  - ssm
+  - hybrid
+  - turbo
+extra:
+  slug: minimax-h3-turbo

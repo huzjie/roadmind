@@ -1,0 +1,13 @@
+name: Lightricks/LTX-2.5
+family: LTX
+task: video-generation
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: custom
+local: false
+tags:
+  - video-generation
+  - diffusion
+extra:
+  slug: ltx-2-5

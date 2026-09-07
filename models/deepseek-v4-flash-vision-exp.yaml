@@ -1,0 +1,15 @@
+name: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+family: DeepSeek
+task: vision-flash
+backend: transformers
+parameter_billions: 16.0
+context_length: 65536
+license: MIT
+local: true
+tags:
+  - vision
+  - fp8
+  - quantization
+  - efficient
+extra:
+  slug: deepseek-v4-flash-vision-exp

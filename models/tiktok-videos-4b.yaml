@@ -1,0 +1,14 @@
+name: kuben-developer/tiktok-videos-4b
+family: social-data
+task: video-metadata
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: custom
+local: false
+tags:
+  - social-media
+  - metadata
+  - dataset
+extra:
+  slug: tiktok-videos-4b

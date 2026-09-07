@@ -1,0 +1,5 @@
+# 通过 OpenAI 兼容端点推理
+inference:
+  model:
+    name: qwen-drive
+    backend: openai

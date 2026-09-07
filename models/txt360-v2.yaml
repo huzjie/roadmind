@@ -1,0 +1,14 @@
+name: IFM/TxT360-v2
+family: K2-Horizon
+task: pretrain-data
+backend: transformers
+parameter_billions: 0.0
+context_length: 0
+license: CC-BY-4.0
+local: true
+tags:
+  - pretraining
+  - web-corpus
+  - dataset
+extra:
+  slug: txt360-v2

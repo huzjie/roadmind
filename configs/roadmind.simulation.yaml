@@ -1,0 +1,10 @@
+# 仿真评测配置
+planning:
+  horizon: 8.0
+  dt: 0.2
+  target_speed: 12.0
+  max_speed: 18.0
+
+perception:
+  conf_threshold: 0.25
+  enable_tracking: true

@@ -1,0 +1,36 @@
+# RoadMind 示例配置
+app:
+  name: roadmind
+  version: "1.0.0"
+  timezone: Asia/Shanghai
+  log_level: INFO
+
+inference:
+  model:
+    name: Qwen/Qwen-Drive-1.0-4B
+    backend: transformers
+    device: auto
+    dtype: auto
+    max_new_tokens: 512
+    temperature: 0.2
+  fallback_backends: [mock]
+  cache_enabled: true
+  cache_ttl: 300
+
+perception:
+  conf_threshold: 0.3
+  nms_iou: 0.45
+  enable_bev: true
+  enable_tracking: true
+
+planning:
+  horizon: 6.0
+  dt: 0.5
+  max_speed: 15.0
+  target_speed: 10.0
+  safety_margin: 2.0
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  api_prefix: /v1

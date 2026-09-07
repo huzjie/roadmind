@@ -1,0 +1,13 @@
+name: google/timesfm-3.0
+family: TimesFM
+task: time-series
+backend: transformers
+parameter_billions: 0.2
+context_length: 512
+license: custom
+local: true
+tags:
+  - time-series
+  - forecasting
+extra:
+  slug: timesfm-3-0

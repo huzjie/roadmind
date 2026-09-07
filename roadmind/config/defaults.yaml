@@ -1,0 +1,52 @@
+# RoadMind 默认配置（可直接复制为 roadmind.yaml 后修改）
+app:
+  name: roadmind
+  version: "1.0.0"
+  timezone: Asia/Shanghai
+  log_level: INFO
+
+inference:
+  model:
+    name: Qwen/Qwen-Drive-1.0-4B
+    backend: transformers
+    device: auto
+    dtype: auto
+    max_new_tokens: 512
+    temperature: 0.2
+    trust_remote_code: false
+    revision: main
+  fallback_backends:
+    - mock
+  cache_enabled: true
+  cache_ttl: 300
+  timeout: 120
+  batch_size: 1
+
+perception:
+  backend: roadmind
+  conf_threshold: 0.3
+  nms_iou: 0.45
+  enable_bev: true
+  enable_tracking: true
+  max_detections: 100
+
+planning:
+  horizon: 6.0
+  dt: 0.5
+  max_speed: 15.0
+  target_speed: 10.0
+  safety_margin: 2.0
+  lane_width: 3.5
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: 1
+  api_prefix: /v1
+  enable_docs: true
+
+observability:
+  metrics_enabled: true
+  tracing_enabled: false
+  prometheus_enabled: false
+  log_payload: false

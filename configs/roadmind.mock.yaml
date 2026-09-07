@@ -1,0 +1,6 @@
+# 离线 Mock 配置：无需 GPU / 模型即可跑通全链路
+inference:
+  model:
+    name: mock/qwen-drive
+    backend: mock
+  fallback_backends: [mock]

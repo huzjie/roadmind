@@ -1,0 +1,14 @@
+name: MiniMaxAI/HUMAIN-M3
+family: HUMAIN
+task: arabic-llm
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: custom
+local: false
+tags:
+  - arabic
+  - national-ai
+  - llm
+extra:
+  slug: humain-m3

@@ -1,0 +1,14 @@
+name: Comfy-Org/ComfyUI
+family: ComfyUI
+task: diffusion-interface
+backend: openai
+parameter_billions: 0.0
+context_length: 0
+license: GPL-3.0
+local: false
+tags:
+  - diffusion
+  - comfyui
+  - workflow
+extra:
+  slug: comfyui
